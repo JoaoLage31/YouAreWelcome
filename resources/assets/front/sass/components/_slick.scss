@@ -1,0 +1,46 @@
+@media (min-width: 1200px) { 
+
+    .desktop{
+        display: block !important;
+    }
+    
+    .tablet{
+        display: none !important;
+    }
+
+    .mobile{
+        display: none !important;
+    }
+ }
+
+
+ @media (min-width: 550px) and (max-width:1199px){ 
+
+    .desktop{
+        display: none !important;
+    }
+    
+    .tablet{
+        display: block !important;
+    }
+    .mobile{
+        display: none !important;
+    }
+ }
+
+ @media  (max-width:549px){ 
+
+    .desktop{
+        display: none !important;
+    }
+    
+    .tablet{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+ }
+
+
+ 

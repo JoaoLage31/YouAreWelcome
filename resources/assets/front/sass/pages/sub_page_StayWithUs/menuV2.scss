@@ -1,0 +1,22 @@
+.menu__buttonV2{
+    color: $azul_claro;
+}
+.V2{
+    .small-title-3{
+        color: $azul_cards;
+    }
+    
+    .title-2{
+        color: $azul_cards;
+    }
+    
+    .small-title2{
+        color: $azul_cards;
+        @include limite-text(2rem, 4);
+    }
+}
+
+.Stay_container{
+    display: flex;
+    flex-wrap: wrap;
+}

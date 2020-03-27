@@ -1,11 +1,14 @@
 <nav class="nav ">
     <section class="nav__menu ">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+            <img src="{{URL::asset('front/media/Menu - Alt 2.svg')}}" alt="">
+        </span>
         <div class="nav__menu__img">
-            <img class="nav__img" src="{{URL::asset('front/media/Grupo 4420.svg')}}">
+            <img class="nav__img" src="{{URL::asset('front/media/img/logo/logo_azul_branco.svg')}}">
         </div>
         <ul class="nav__buttons ">
             <li>
-            <a class="hover" href="#">
+            <a class="hover" href="StayWithUs">
                 <div class="menu-hover-img">
                     <img src="{{('front/media/icons/other_arrows/Caminho 6.svg')}}" alt="">
                 </div>
@@ -34,47 +37,19 @@
 
     <section class="nav__right_side">
         <a class="nav__right_side__button button-text" href="#">Contact Us</a>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-                <img src="{{URL::asset('front/media/Menu - Alt 2.svg')}}" alt="">
-            </span>
-            <div id="myNav" class="overlay justify-content-end">
-                <div class="nav__right_side__tilles">
-                    <div class="row justify-content-end">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4310.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4322.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4325.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4319.svg')}}" alt="">
-                    </div>
-                    <div class="row justify-content-end">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4321.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4318.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4332.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4331.svg')}}" alt="">
-                    </div>
-                    <div class="row justify-content-end">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4329.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4324.svg')}}" alt="">
-                    </div>
-                    <div class="row justify-content-end">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4310.svg')}}" alt="">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4330.svg')}}" alt="">
-                    </div>
-                    <div class="row justify-content-end">
-                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
-                    </div>
-                </div>
-                
+            
+            <div id="myNav" class="overlay justify-content-between">
                 <div class="nav__right_side__menu">
                     <div class="top-side">
                         <div>
                             <div class="d-flex justify-content-between align-middle">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="d-flex">
-                                    <a class="d-flex" href=""><h1 class="language active"> Pt</h1></a>
-                                    <a class="d-flex"  href=""><h1 class="language"> En</h1></a>
+                                    <a class="d-flex" href="#"><h1 class="language active"> Pt</h1></a>
+                                    <a class="d-flex"  href="#"><h1 class="language"> En</h1></a>
+                                    <a class="d-flex"  href="#"><h1 class="language"> Es</h1></a>
                                 </div>
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    
                                 </div>
                         </div>
                         
@@ -113,6 +88,34 @@
                         <img  class="nav__right_side__menu__log-in__element"  src="{{URL::asset('front/media/icons/lock-alt-2-lock.svg')}}" alt="">
                     </div>
                 </div>
+                <div class="nav__right_side__tilles">
+                    <div class="row justify-content-end">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4310.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4322.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4325.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4319.svg')}}" alt="">
+                    </div>
+                    <div class="row justify-content-end">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4321.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4318.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4332.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4331.svg')}}" alt="">
+                    </div>
+                    <div class="row justify-content-end">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4329.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4324.svg')}}" alt="">
+                    </div>
+                    <div class="row justify-content-end">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4310.svg')}}" alt="">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4330.svg')}}" alt="">
+                    </div>
+                    <div class="row justify-content-end">
+                        <img class="section1__row__tilles_menu" src="{{URL::asset('front/media/Grupo 4327.svg')}}" alt="">
+                    </div>
+                </div>
+                
                 
             </div>
     </section>
@@ -143,7 +146,7 @@
         </li>
     </ul>
 </nav>
-
+@push('scripts')
 <script>
     
     function openNav() {
@@ -154,4 +157,14 @@
       document.getElementById("myNav").style.width = "0%";
     }
 
+    function active_language(el) {
+      $('.language').removeClass('active');
+      $(el).addClass('active');
+}
+
+     $('.language').on('click', function(){
+        active_language(this);
+     })
+
 </script>
+@endpush

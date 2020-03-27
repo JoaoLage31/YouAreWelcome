@@ -91,6 +91,8 @@
     border-width:3px;
     position: absolute;
     z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     &__buttons{
         display: -webkit-box;
@@ -113,13 +115,6 @@
 .slide_section2 {
     margin-bottom: 160px;
     margin-bottom: 10rem;
-
-    .slick-list{
-        >div{
-            margin-left: 160px;
-            margin-left: 10rem;
-        }   
-    }
 }
 
 .add{
@@ -151,7 +146,7 @@
 
     .text{
         z-index: 1;
-
+        text-decoration: none;
         &__mb{
             margin-bottom: 16px;
             margin-bottom: 1rem;
@@ -178,7 +173,16 @@
             border-radius: 0.2rem;
             width: 55%;
             display: inline-block;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: none;
+            }
         }
+    }
+
+    a:hover{
+        text-decoration: none;
     }
 
     .go-ontop-none{

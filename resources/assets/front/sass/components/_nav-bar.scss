@@ -4,24 +4,30 @@
     padding: 16px;
     padding: 1rem;
     width: 100%;
+    max-width: 1366px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     padding-left: 48px;
     padding-left: 3rem;
     padding-right: 48px;
     padding-right: 3rem;
+
+    &__img{
+        margin-left: 3rem;
+    }
 
     a{
         text-decoration: none;
     }
 
     &__right_side__menu{
-        width: 25vw;
+        width: 30vw;
+        background-color: #2e3e91de;;
         
         &__log-in{
             background-color: $beje;
@@ -29,13 +35,13 @@
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             padding: 16px;
             padding: 1rem;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             height: 10vh;
 
             &__element{
@@ -122,12 +128,14 @@
 
 .overlay {
     height: 100vh;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
-    background-color: $azul_claro;
+    left: 0;
     background-color: $azul_claro;
     overflow-x: hidden;
     -webkit-transition: 0.35s;
@@ -166,7 +174,7 @@
  .closebtn{
      font-size: 24px;
      font-size: 1.5rem;
-     color: #0D122B!important;
+     color: white;
  }
 
 
@@ -238,6 +246,7 @@
     .nav{
         padding: 1rem;
         &__right_side{
+
             &__tilles{
                 display: none;
             }

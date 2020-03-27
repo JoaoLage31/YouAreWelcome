@@ -5,6 +5,10 @@
 
     &__row{
 
+        &__last{
+            padding-bottom: 27.5vh;
+        }
+
         &__tilles{
             width: 10vw;
             height: 10vw;
@@ -12,11 +16,12 @@
                object-fit: cover;
         }
         &__tilles-1{
-            width: 17.5vh;
-            height: 17.5vh;
+            width: 14.5vh;
+            height: 14.5vh;
             -o-object-fit: cover;
                object-fit: cover;
         }
+
         &__tilles-2{
             width: 15vh;
             height: 15vh;
@@ -175,7 +180,7 @@
     .rotate{
         -webkit-transform: scaleX(-1) rotate(180deg);
                 transform: scaleX(-1) rotate(180deg);
-        padding-bottom: 55vh;
+        padding-bottom: 28vh;
         padding-top: 0;
     }
     .section1{
@@ -213,7 +218,7 @@
     }
     @media (min-height: 560px) and (max-height: 812px) { 
         .last{
-            padding-bottom: 80vh;
+            padding-bottom: 150vw;
         }
         }
  }

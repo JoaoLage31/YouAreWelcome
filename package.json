@@ -28,6 +28,7 @@
     "dependencies": {
         "@mdi/font": "^4.9.95",
         "aos": "^2.3.4",
-        "slick-carousel": "^1.8.1"
+        "slick-carousel": "^1.8.1",
+        "vuejs-paginate": "^2.1.0"
     }
 }

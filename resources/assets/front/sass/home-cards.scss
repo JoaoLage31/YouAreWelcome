@@ -45,7 +45,7 @@
                     justify-content: space-between;
 
             &__price{
-                display: ruby;
+                display: flex;
             }
         }
     }
@@ -79,13 +79,27 @@
 }
 
 
-.btn:hover{
+.btn1:hover{
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     color: $azul-cards;
 }
 
-#myBtnContainer{
+#myBtnContainer {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    margin-top: 32px;
+    margin-top: 2rem;
+}
+
+#myBtnContainer2 {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    margin-top: 32px;
+    margin-top: 2rem;
+}
+
+#myBtnContainer_mobile {
     margin-bottom: 48px;
     margin-bottom: 3rem;
     margin-top: 32px;
