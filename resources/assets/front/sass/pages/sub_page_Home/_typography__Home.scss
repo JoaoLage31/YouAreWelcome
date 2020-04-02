@@ -1,0 +1,146 @@
+.slide_home_section__container_info{
+
+    &__rating{
+        &__top{
+
+            &__field{
+                &__avaliation{
+                    color: $azul_cards;
+                    font-family: $font-Source;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    @include limite-text(2.7rem, 1);
+                    @include letter-spacing(20, 2.4);
+                    
+                    &__field{
+            
+                        
+                        &__value{
+                            color: white;
+                            font-family: $font-Source;
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                            margin-bottom: 0;
+                            @include  text-no-min(1.5rem, 1);
+                        }
+                    }
+                }
+    
+                &__field2{
+                    color: $azul_claro;
+                    font-size: 1rem;
+                    font-family: $font-Source;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    @include limite-text(1.5rem, 1);
+                    @include letter-spacing(20, 1);
+            
+                    &__value{
+                        color: $azul_claro;
+                        font-size: 2.3rem;
+                        font-family: $font-Source;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                        @include limite-text(2.5rem, 1);
+                        @include letter-spacing(20, 1);
+                    }
+                }
+            }
+        }
+    
+        &__field{
+            background-color: $azul_claro;
+        
+            &__reserv{
+                color: white;
+                font-family: $font-Source;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-right: 7px;
+            }
+        }
+    }
+
+
+    &__features{
+        .title-home{
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            line-height: 2rem;
+            min-height: 2rem;
+            max-height: 2rem;
+        }
+        &__data{
+            display: flex;
+            flex-wrap:wrap ;
+            &__individual{
+                display: flex;
+                width: 50%;
+
+                h3{
+                    font-family: $font-Source;
+                    font-size: 1rem;
+                    color: $azul_cards;
+                    margin-right: 3rem;
+                    @include letter-spacing(20, 1);
+                }
+
+                h4{
+                    font-family: $font-Source;
+                    font-size: 1rem;
+                    color: $azul_cards;
+                    font-weight: 600;
+                    @include letter-spacing(20, 1);
+                }
+            }
+        }
+    }
+
+    &__mapa{
+        &__adress{
+            margin-top: 2rem;
+
+            h3{
+                font-family: $font-Source;
+                font-size: 1.125rem;
+                color: $azul_cards;
+                margin-right: 3rem;
+                font-weight: 700;
+                @include letter-spacing(20, 1.125);
+            }
+    
+            h4{
+                font-family: $font-Source;
+                font-size: 1rem;
+                color: $azul_cards;
+                width: 65%;
+                @include letter-spacing(20, 1);
+            }
+        }
+    }
+}
+
+.home_form__title{
+    h4{
+        color: $azul_cards;
+        font-size: 1.5rem;
+        font-family: $font-Gelasio;
+        font-weight: 400;
+        width: 90%;
+        margin:auto;
+    }
+}
+
+.home_form__policy{
+    font-family: $font-Source;
+    font-size: 0.825rem;
+    color: $beje;
+    @include text-no-min(1rem, 2);
+    @include letter-spacing(20, 0.825);
+    a{
+        color: $beje;
+        text-decoration: none;
+    }
+}

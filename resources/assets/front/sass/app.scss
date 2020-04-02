@@ -1,6 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -34,5 +34,11 @@
 @import 'pages/home/section-3.scss';
 @import 'pages/home/home-slider.scss';
 @import 'pages/sub_page_StayWithUs/menuV2.scss';
+
+//HOME
+
+@import 'pages/sub_page_Home/home.scss';
+@import 'pages/sub_page_Home/form.scss';
+@import 'pages/sub_page_Home/typography__Home.scss';
 
 

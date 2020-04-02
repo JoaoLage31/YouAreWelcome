@@ -1,0 +1,203 @@
+.slide_home{
+
+    
+    margin: auto;
+    .home__img{
+        height: 75vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slick-slide{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.slide_home_section{
+    margin-top: 10rem;
+
+        &__line{
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            height: 1px;
+            background-color: $beje;
+        }
+
+    &__arrows{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 40vh;
+    }
+
+    &__bigtitle{
+        width: 78%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+
+        .title-home{
+            color: $beje !important;
+            font-size: 2.3rem;
+            margin: 0;
+            @include text-no-min(2.4rem, 1);
+
+        }
+
+        .local-place{
+            color: $beje !important;
+            font-size: 1.125rem;
+            @include text-no-min(1.3rem, 1);
+        }
+        
+    }
+
+    &__container_info{
+        width: 85%;
+        margin-left: 10%;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        &__bigtitle{
+            
+        .title-home{
+            font-weight: 400;
+            @include limite-text(2rem, 1);
+        }
+
+        .local-place{
+            font-weight: 400;
+        }
+
+        &__line{
+            border-bottom-color: #D2D2DC;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        &__rating{
+            border-color: #EAEBF4;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 0;
+            height: 100%;
+            
+            
+            &__field{
+                padding-top: 2rem;
+            }
+
+            &__top{
+
+                &__field{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+
+                    &__line{
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                        border-bottom-color: #EAEBF4;
+                        border-bottom-width: 1px;
+                        border-bottom-style: solid;
+                    }
+    
+                    &__avaliation{
+    
+                        &__field{
+                            background-color: $azul_cards;
+                        border-radius: 10px;
+                        border-bottom-left-radius:0px;
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+                            
+                        }
+    
+                        &__value{
+                            
+                        }
+                    }
+                }
+            }
+            
+            &__field{
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-top: 1rem;
+                
+                &__img{
+                    margin-left: 7px;
+                }
+            }
+        }
+
+        &__features{
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom-color: #D2D2DC;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+
+            &__data{
+                &__individual{
+                    margin-bottom: 0.5rem;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+        &__mapa_sec{
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__mapa{
+            padding: 0;
+
+            &__iframe{
+                width: 100%;
+                height:370px;
+            }
+        }
+    }
+}
+
+.more{
+    color: $azul_cards;
+    font-size: 1.125rem;
+}
+
+.text_contaiener__gradient{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+}
