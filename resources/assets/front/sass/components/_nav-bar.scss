@@ -132,7 +132,7 @@
     max-width: 1366px;
     margin: auto;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -278,6 +278,11 @@
 }
 
 @include media-breakpoint-down(sm) {
+
+    .overlay{
+        position: fixed;
+    }
+
     .nav{
         padding: 1rem;
         &__right_side{

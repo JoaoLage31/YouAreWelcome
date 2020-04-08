@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="{{ mix('/front/css/app.css') }}" media="screen" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-
 </head>
 
 <body>

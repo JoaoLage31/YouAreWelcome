@@ -43,6 +43,7 @@ Route::get('a_home', function()
             'items'=>[[
                 'home'=>'Avenida da Républica Matosinhos',
                 'subhome'=>'CAMPANHÃ',
+                'description'=>' The prices shown are the “net effective rent” when you receive one-month free rent on your 12+ month lease (lease must start by 3/29). Only applicable to new residents who are applying to live with Bungalow. Paid via PayPal 30 days after occupancy.The prices shown are the “net effective rent” when you receive one-month free rent on your 12+ month lease (lease must start by 3/29). Only applicable to new residents who are applying to live with Bungalow. Paid via PayPal 30 days after occupancy.   The prices shown are the “net effective rent” when you receive one-month free rent on your 12+ month lease (lease must start by 3/29). Only applicable to new residents who are applying to live with Bungalow. Paid via PayPal 30 days after occupancy.The prices shown are the “net effective rent” when you receive one-month free rent on your 12+ month lease (lease must start by 3/29). Only applicable to new residents who are applying to live with Bungalow. Paid via PayPal 30 days after occupancy.',
                 'field__1'=>'8',
                 'field__1'=>'2',
                 'field__2' => '1',
@@ -60,7 +61,16 @@ Route::get('a_home', function()
                 'checkout'=>'09:00',
                 'floor'=>'8',
                 'adress'=>'Av. Dom Afonso Henriques 1196 - Esc. 203, 4450-012 Matosinhos',
-
+                'wifi_hispeed'=>['front/media/icons/home/wifi.svg','High speed Internet'],
+                'air_condicioned'=>['front/media/icons/home/air-conditioner.svg','AC'],
+                'shower'=>['front/media/icons/home/shower.svg','Electric shower'],
+                'hair_dryer'=>['front/media/icons/home/secador.svg','Hair Dryer'],
+                'kitchen'=>['front/media/icons/home/kitchen.svg','Equipped kitchen'],
+                'towel'=>['front/media/icons/home/toalha.svg','Towels'],
+                'utensils'=>['front/media/icons/home/utensils.svg','Kitchen Utensils'],
+                'tv'=>['front/media/icons/home/TV.svg','TV'],
+                'laundry'=>['front/media/icons/home/laundry.svg','Laundry'],
+                'park'=>['front/media/icons/home/park.svg','Parking'],
                 'images'=>['front/media/img/saved/img_0.png', 'front/media/img/saved/img_0.png','front/media/img/saved/img_0.png']
                 ]
             ]]];

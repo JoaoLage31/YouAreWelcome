@@ -9,6 +9,7 @@
                     font-family: $font-Source;
                     font-weight: 600;
                     font-size: 2.4rem;
+                    width: 70%;
                     @include limite-text(2.7rem, 1);
                     @include letter-spacing(20, 2.4);
                     
@@ -32,6 +33,7 @@
                     font-family: $font-Source;
                     font-weight: 600;
                     margin-bottom: 0;
+                    width: 70%;
                     @include limite-text(1.5rem, 1);
                     @include letter-spacing(20, 1);
             
@@ -57,10 +59,31 @@
                 font-size: 1.5rem;
                 font-weight: 600;
                 margin-right: 7px;
+                @include limite-text(1.6rem, 1);
+                min-height: unset;
+                margin-bottom: 0;
             }
         }
     }
 
+
+    &__amenities{
+
+        &__individual{
+
+            h4{
+                font-size: 1rem;
+                color: $azul_cards;
+                font-family: $font-Source;
+                letter-spacing: 0.02rem;
+                margin-left: 1.5rem;
+                margin-bottom: 0;
+                @include limite-text(1rem, 1);
+                @include letter-spacing(20, 1);
+            }
+
+        }
+    }
 
     &__features{
         .title-home{
@@ -92,6 +115,7 @@
                     font-size: 1rem;
                     color: $azul_cards;
                     font-weight: 600;
+                    
                     @include letter-spacing(20, 1);
                 }
             }
@@ -108,6 +132,7 @@
                 color: $azul_cards;
                 margin-right: 3rem;
                 font-weight: 700;
+                @include limite-text(1.3rem, 1);
                 @include letter-spacing(20, 1.125);
             }
     
@@ -116,6 +141,7 @@
                 font-size: 1rem;
                 color: $azul_cards;
                 width: 65%;
+                @include limite-text(1.2rem, 2);
                 @include letter-spacing(20, 1);
             }
         }
@@ -130,6 +156,7 @@
         font-weight: 400;
         width: 90%;
         margin:auto;
+        @include limite-text(1.6rem, 2);
     }
 }
 
@@ -142,5 +169,76 @@
     a{
         color: $beje;
         text-decoration: none;
+    }
+}
+
+.morelink{
+    color: $beje;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.morelink:hover{
+    color: $beje;
+}
+
+
+
+.arrow_less{
+    transform: rotate(180deg);
+ 
+}
+
+
+
+
+
+@include media-breakpoint-down(md) { 
+    .slide_home_section__bigtitle{
+
+
+        .title-home{
+            font-size: 2rem;
+            @include text-no-min(2.1rem, 2);
+        }
+    }
+    .home_form__policy{
+        width: 55%;
+        @include text-no-min(1rem, 4);
+    }
+}
+
+@include media-breakpoint-down(xs) { 
+    
+    .home_form{
+
+        padding: 0;
+
+        &__container{
+        }
+
+        &__policy{
+            @include text-no-min(1rem, 4);
+            @include letter-spacing(20, 0.825);
+        }
+    }
+
+    .slide_home_section__bigtitle{
+
+        display: block;
+        margin-bottom: 0;
+
+        .title-home{
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            @include text-no-min(2rem, 3);
+        }
+    }
+
+    .home_form__title{
+        h4{
+            @include limite-text(1.6rem, 4);
+        }
     }
 }
