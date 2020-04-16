@@ -12182,6 +12182,14 @@ html {
   .menu-open {
     margin: auto;
   }
+
+  .small-title__variant {
+    color: #2E3E91;
+  }
+
+  .nav__buttons2 {
+    border-top-color: #69A4D9;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -12470,6 +12478,10 @@ footer {
     object-fit: cover;
   }
 
+  .section1__row__last {
+    padding-bottom: 78vh;
+  }
+
   .section2 {
     padding-top: 25vh;
     width: 65vw;
@@ -12538,6 +12550,20 @@ footer {
 @media (max-width: 350px) {
   .last {
     padding-bottom: 104vh;
+  }
+
+  .section1__row__last {
+    padding-bottom: 120vh;
+  }
+
+  .small-title2 {
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 20;
+    line-height: 1.6rem;
+    min-height: 33.5rem;
+    max-height: 33.5rem;
   }
 }
 

@@ -14,6 +14,7 @@
 <body>
 
     <!-- Begin: Header -->
+    <!-- (Request::segment(1)) -->
     @include('front.layout.nav-bar')
     <!-- End: Header -->
     

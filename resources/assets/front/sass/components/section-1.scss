@@ -148,6 +148,10 @@
                 -o-object-fit: cover;
                    object-fit: cover;
             }
+
+            &__last{
+                padding-bottom: 78vh;
+            }
         }
     }
 
@@ -204,6 +208,7 @@
                 -o-object-fit: cover;
                    object-fit: cover;
             }
+            
         }
     }
 }
@@ -226,6 +231,15 @@
  @media (max-width: 350px) { 
     .last{
         padding-bottom: 104vh;
+    }
+
+    .section1__row__last{
+        padding-bottom: 120vh;
+    }
+
+    .small-title2 {
+        font-size: 1.1rem;
+        @include limite-text-small(1.6rem, 20);
     }
 }
 
