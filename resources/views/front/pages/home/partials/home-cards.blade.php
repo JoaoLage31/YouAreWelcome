@@ -1,40 +1,61 @@
 <!-- DESKTOP -->
-
+<div class="desktop">
+  <div id="myBtnContainer" class="d-flex justify-content-center">
+    @foreach($data as $key=>$collection)
+      <button id="{{$key == 0 ? '' : 'none'}} slider{{$key}}" id="slide{{$key}}" class="btn1 {{$key == 0 ? 'active2' : ''}}   slector-slick" data-target="#slide{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+    @endforeach
+    @foreach($data_invest as $key=>$collection)
+      <button id="{{$key == 1 ? '' : 'none'}} slider{{$key}}" id="slide{{$key}}" class="btn1   slector-slick" data-target="#slide{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+    @endforeach
+  </div>
+</div>
   <div class="desktop">
-    <div id="myBtnContainer" class="d-flex justify-content-center">
-      @foreach($data as $key=>$collection)
-        <button id="{{$key == 0 ? '' : 'none'}} slider{{$key}}" id="slide{{$key}}" class="btn1 {{$key == 0 ? 'active2' : ''}}   slector-slick" data-target="#slide{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
-      @endforeach
-    </div>
     <div style="position:relative">
       <div class="add__Blank"></div>
       <div class="add__Blank"></div>
     </div>
     <div id="here">
       @foreach($data as $key=>$collection)
+        <div class="slide_section2  homes_for_rent  {{$key == 0 ? '' : 'none'}}" id="slide{{$key}}">
+          @foreach($collection['items'] as $item)
+            @include('front.components.individual_home')
+          @endforeach
+        </div>
+      @endforeach
+    </div>
+  </div>
 
-      <div class="slide_section2  homes_for_rent my-edi {{$key == 0 ? '' : 'none'}}" id="slide{{$key}}">
-        @foreach($collection['items'] as $item)
-              @include('front.components.individual_home')
+  <div class="desktop">
+    <div id="here">
+      @foreach($data_invest as $key=>$collection)
+        <div class="slide_section2  homes_for_rent  none" id="slide{{$key}}">
+          @foreach($collection['items'] as $item)
+            @include('front.components.individual_home-invest')
           @endforeach
-          </div>
-          @endforeach
+        </div>
+      @endforeach
     </div>
   </div>
 
 <!-- END DESKTOP -->
 <!-- TABLET -->
+
+<div class="tablet">
+  <div id="myBtnContainer" class="d-flex justify-content-center">
+    @foreach($data as $key=>$collection)
+    <button id="{{$key == 0 ? '' : 'none'}} slider2{{$key}}" id="slide2{{$key}}" class="btn2 {{$key == 0 ? 'active2' : ''}}   slector-slick2" data-target="#slide2{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+    @endforeach
+    @foreach($data_invest as $key=>$collection)
+    <button id="{{$key == 2 ? '' : 'none'}} slider2{{$key}}" id="slide2{{$key}}" class="btn2   slector-slick2" data-target="#slide2{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+  @endforeach
+  </div>
+</div>
   <div class="tablet">
-    <div id="myBtnContainer2" class="d-flex justify-content-center">
-      @foreach($data as $key=>$collection)
-        <button id="{{$key == 0 ? '' : 'none'}} slider2{{$key}}" id="slide2{{$key}}" class="btn2 {{$key == 0 ? 'active2' : ''}}   slector-slick2" data-target="#slide2{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
-      @endforeach
-    </div>
 
     <div id="here">
       @foreach($data as $key=>$collection)
 
-      <div class="slide_tablet  homes_for_rent my-edi {{$key == 0 ? '' : 'none'}}" id="slide2{{$key}}">
+      <div class="slide_tablet  homes_for_rent  {{$key == 0 ? '' : 'none'}}" id="slide2{{$key}}">
         @foreach($collection['items'] as $item)
             @include('front.components.individual_home')
             @endforeach
@@ -42,24 +63,54 @@
           @endforeach
     </div>
   </div>
-<!-- END TABLET -->
-<!-- MOBILE -->
-  <div class="mobile">
-    <div id="myBtnContainer_mobile" class="d-flex justify-content-center">
-      @foreach($data as $key=>$collection)
-        <button id="{{$key == 0 ? '' : 'none'}} slider2{{$key}}" id="slide_mobile{{$key}}" class="btn_mobile {{$key == 0 ? 'active2' : ''}}   slector-slick_mobile" data-target="#slide_mobile{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+
+  <div class="tablet">
+    <div id="here">
+      @foreach($data_invest as $key=>$collection)
+        <div class="slide_tablet  homes_for_rent  none" id="slide2{{$key}}">
+          @foreach($collection['items'] as $item)
+            @include('front.components.individual_home-invest')
+          @endforeach
+        </div>
       @endforeach
     </div>
+  </div>
+<!-- END TABLET -->
+<!-- MOBILE -->
 
+<div class="mobile">
+  <div id="myBtnContainer_mobile" class="d-flex justify-content-center">
+    @foreach($data as $key=>$collection)
+    <button id="{{$key == 0 ? '' : 'none'}} slider2{{$key}}" id="slide_mobile{{$key}}" class="btn_mobile {{$key == 0 ? 'active2' : ''}}   slector-slick_mobile" data-target="#slide_mobile{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+    @endforeach
+    @foreach($data_invest as $key=>$collection)
+    <button id="{{$key == 2 ? '' : 'none'}} slider2{{$key}}" id="slide_mobile{{$key}}" class="btn_mobile slector-slick_mobile" data-target="#slide_mobile{{$key}}"> {{$collection['name']}} <p class="filter-number">{!!count($collection['items'])!!}</p></button>
+  @endforeach
+  </div>
+</div>
+
+  <div class="mobile">
     <div id="here">
       @foreach($data as $key=>$collection)
 
-      <div class="slide_mobile  homes_for_rent my-edi {{$key == 0 ? '' : 'none'}}" id="slide_mobile{{$key}}">
+      <div class="slide_mobile  homes_for_rent  {{$key == 0 ? '' : 'none'}}" id="slide_mobile{{$key}}">
           @foreach($collection['items'] as $item)
                 @include('front.components.individual_home')
           @endforeach
           </div>
           @endforeach
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div id="here">
+      @foreach($data_invest as $key=>$collection)
+        <div class="slide_mobile  homes_for_rent  none" id="slide_mobile{{$key}}">
+          @foreach($collection['items'] as $item)
+            @include('front.components.individual_home-invest')
+          @endforeach
+        </div>
+      @endforeach
     </div>
   </div>
 <!-- END MOBILE -->

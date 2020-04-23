@@ -1,0 +1,92 @@
+.sub-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom-color: $bordas;
+    border-bottom-style: 1px;
+    border-bottom-style: solid;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    &__menu{
+
+
+        &__button{
+            font-family: $font-Source;
+            color: $azul_claro;
+            font-style: 0.825rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-top: 1.2rem;
+            padding-bottom: 1.3rem;
+            margin-right: 2rem;
+            transition: 0.2s;
+
+            &:hover{
+                color: $azul_cards;
+                border-bottom-color: $azul_cards;
+                border-bottom-style: 1px;
+                border-bottom-style: solid;
+            }
+
+            &__active{
+                color: $azul_cards;
+                border-bottom-color: $azul_cards;
+                border-bottom-style: 1px;
+                border-bottom-style: solid;
+            }
+        }
+    }
+}
+
+.cards_invest{
+    display: flex;
+    margin: auto;
+    padding: 0;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+
+    .cards{
+        &__card{
+            margin-left: 7.5px;
+            margin-right: 7.5px;
+            width: 24%;
+            padding-bottom: 2.5rem;
+            box-shadow: unset;
+            border-color:$bordas;
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+}
+
+.cards_invest_title{
+    .section2{
+        position: unset;
+        margin: auto;
+        padding-top: unset;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+
+        .title{
+            color: $azul_cards;
+            text-align: center;
+            font-size: 2.375rem;
+            margin-bottom: 2rem;
+        }
+
+        h2{
+            text-align: center;
+            color: $azul_cards;
+            min-height: unset;
+            font-size: 1.125rem;
+        }
+
+        .small-title2{
+            font-size: 1.5rem;
+        }
+    }
+}
+

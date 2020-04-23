@@ -60,7 +60,7 @@
          @endif
          @if($collection['id'] == '1')
             <p class="title-parameters">
-               <b> {{$inidvidual_field_1}} </b>
+               <b class="local-place"> {{$inidvidual_field_1}} </b>
                Certificado
             </p>
          @endif
@@ -82,7 +82,7 @@
      @endif
      @if($collection['id'] == '1')
         <p class="title-parameters">
-           <b> {{$inidvidual_field_2}} </b>
+           <b class="local-place"> {{$inidvidual_field_2}} </b>
            Área
         </p>
      @endif
@@ -106,7 +106,7 @@
  @endif
  @if($collection['id'] == '1')
     <p class="title-parameters">
-       <b> {{$inidvidual_field_3}} </b>
+       <b class="local-place"> {{$inidvidual_field_3}} </b>
        Tipologia
     </p>
  @endif
@@ -167,3 +167,4 @@
 @if(!empty($images))
     {{$images}}
 @endif
+

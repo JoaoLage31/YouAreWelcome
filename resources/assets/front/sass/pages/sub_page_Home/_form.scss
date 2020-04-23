@@ -125,3 +125,25 @@ select {
   
   
 }
+
+.slide_home_section__container_info__rating__top__field{
+    .home_form{
+        padding: 0;
+        margin-bottom: 0;
+
+        &__container{
+            width: 100%;
+        }
+
+        &__submit{
+            display: none;
+        }
+
+        &__policy{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+    }
+
+}

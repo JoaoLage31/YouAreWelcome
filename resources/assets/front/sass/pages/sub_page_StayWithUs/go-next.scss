@@ -1,0 +1,24 @@
+.go-next{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.5rem;
+    font-family: $font-Gelasio;
+
+    p{
+        color: $azul_cards;
+        margin-bottom: 0;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+
+    &__svg-arrow{
+        fill: $azul_cards;
+        cursor: pointer;
+    }
+
+    &__increment{
+        font-weight: 600;
+    }
+}

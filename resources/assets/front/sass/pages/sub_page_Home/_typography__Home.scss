@@ -33,7 +33,6 @@
                     font-family: $font-Source;
                     font-weight: 600;
                     margin-bottom: 0;
-                    width: 70%;
                     @include limite-text(1.5rem, 1);
                     @include letter-spacing(20, 1);
             
@@ -46,13 +45,18 @@
                         @include limite-text(2.5rem, 1);
                         @include letter-spacing(20, 1);
                     }
+
+                    .home_form{
+                        padding: 0;
+                    }
                 }
             }
         }
     
         &__field{
             background-color: $azul_claro;
-        
+            padding: 1.5rem;
+
             &__reserv{
                 color: white;
                 font-family: $font-Source;
@@ -62,6 +66,10 @@
                 @include limite-text(1.6rem, 1);
                 min-height: unset;
                 margin-bottom: 0;
+            }
+
+            &__buy{
+                background-color: $beje;
             }
         }
     }
@@ -78,7 +86,7 @@
                 letter-spacing: 0.02rem;
                 margin-left: 1.5rem;
                 margin-bottom: 0;
-                @include limite-text(1rem, 1);
+                @include limite-text(1.3rem, 1);
                 @include letter-spacing(20, 1);
             }
 
@@ -164,7 +172,7 @@
     font-family: $font-Source;
     font-size: 0.825rem;
     color: $beje;
-    @include text-no-min(1rem, 2);
+    @include text-no-min(1.3rem, 2);
     @include letter-spacing(20, 0.825);
     a{
         color: $beje;
@@ -241,4 +249,68 @@
             @include limite-text(1.6rem, 4);
         }
     }
+}
+
+.home_ind__container{
+
+        &__invest{
+            font-family: $font-Gelasio;
+            font-size: 1.7rem;
+            font-weight: 300;
+            color: $azul_cards;
+            line-height: 34px;
+
+            @include media-breakpoint-down(sm) { 
+                font-size: 1.5rem;
+            }
+
+            &-title{
+                font-family: $font-Gelasio;
+                font-size: 1.8rem;
+
+                @include media-breakpoint-down(sm) { 
+                    font-size: 1.4rem;
+                }
+            }
+
+            &-description{
+                font-family: $font-Source;
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: $azul_cards;
+                line-height: 34px;
+                @include media-breakpoint-down(sm) { 
+                    font-size: 1.3rem;
+                }
+            }
+
+            &-documents{
+                font-family: $font-Gelasio;
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: $azul_cards;
+                line-height: 34px;
+                margin-bottom: 0;
+                @include media-breakpoint-down(sm) { 
+                    font-size: 1rem;
+                }
+            }
+            
+            &-download{
+                font-size: 1.1rem;
+                margin-bottom: 0;
+                margin-right: 1rem;
+                color: $beje;
+
+                @include media-breakpoint-down(sm) { 
+                    font-size: 0.9rem;
+                }
+            }
+
+            &-sec-title{
+                font-family: $font-Gelasio;
+                font-size: 1.9rem;
+                color: $beje;
+            }
+        }
 }

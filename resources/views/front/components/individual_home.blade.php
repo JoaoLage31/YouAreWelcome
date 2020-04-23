@@ -1,10 +1,8 @@
-
-              
 <div class="col-12 col-lg-12">
     <div  class="home">
         <div class="slide_home_individual">
           @foreach($item["images"] as $img)
-            <a href="a_home" class="home__img"  style="background-image: url({{($img)}}); "></a>
+            <a href="a_home{{$key}}" class="home__img"  style="background-image: url({{($img)}}); "></a>
           <!--  <a href=""><img class="home__img" src="{{($img)}}" alt=""></a> -->
           @endforeach
         </div>

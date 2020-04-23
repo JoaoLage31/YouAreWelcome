@@ -1,3 +1,9 @@
+@if(!empty($subtitle))
+<h2 class="small-title">
+
+    {{$subtitle}}
+</h2>
+@endif
 @if(!empty($title))
     <h1 class="title">
         {{$title}}

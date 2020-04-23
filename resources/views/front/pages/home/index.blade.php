@@ -2,10 +2,6 @@
 
 @extends('front.layout.app')
 
-
-
-
-
 @section('content')
 @php
 $result = ['0'=>
@@ -13,10 +9,11 @@ $result = ['0'=>
     'items'=>[[
         'title'=>'Love where you live, and who you live with',
         'description'=>'Move-in ready homes and a built-in community so you can feel at home, together—wherever you are.',
-]
-    ]]];
+    ]
+]]];
 @endphp
-    @include('front.pages.home.partials.section-1',['data'=>$result])
+
+@include('front.pages.home.partials.section-1',['data'=>$result])
 
 @php
 $result = ['0'=>
@@ -55,12 +52,9 @@ $result2 = ['0'=>
 
 
 @php
-
-
-
 $result =
 ['0'=>
-    [
+[
     'id' =>'0',
     'filter'=>'Rent',
     'name'=>'All for rent ',
@@ -168,9 +162,7 @@ $result =
         'price'=>'100',
         'deal'=>'Rent Home',
         'images'=>['front/media/img/saved/img5.png', 'front/media/img/saved/img4.png','front/media/img/saved/img_2.png']
-        ],
-
-        
+        ] 
 ]],
     '1'=>
         [
@@ -300,87 +292,117 @@ $result =
 
 
         ]
-]],'2'=>
+]]
+
+];
+
+
+$result_invest =
+['2'=>
     [
-    'id' =>'2',
-    'filter'=>'Invest',
-    'name'=>'All For Invest',
-
-    'items'=>[
-        [
-        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse111',
+    
+        'id' =>'1',
+        'filter'=>'Invest',
+        'name'=>'All For Invest',
+        'items'=>[[
+        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
         'subhome'=>'CAMPANHÃ',
-        'field__1'=>'2',
-        'field__2' => '1',
-        'field__3' => '3',
-        'field__4' => '1',
-        'inidvidual_field_1'=>'WIFI',
-        'inidvidual_field_3'=>'Cozinha Equipada',
-        'inidvidual_field_2'=>'Maquina Lavar',
-        'price'=>'100',
-        'deal'=>'Rent Home',
-        'images'=>['front/media/img/saved/img3.jpg', 'front/media/img/saved/img_0.png']
+        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+        culpa qui officia deserunt mollit anim id est laborum.',
+        'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
+            ],
+            [
+            'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+            'subhome'=>'CAMPANHÃ',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+                    'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
 
 
-    ],
-    [
-        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthous2e22222',
+                        ],
+                        [
+                        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+                        'subhome'=>'CAMPANHÃ',
+                        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+                    'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
+
+
+                    ],
+                    [
+                        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+                        'subhome'=>'CAMPANHÃ',
+                        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+                    'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
+
+
+                        ],
+                        [
+                        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+                        'subhome'=>'CAMPANHÃ',
+                        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+        'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
+
+            ],
+            [
+        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
         'subhome'=>'CAMPANHÃ',
-        'field__1'=>'17',
-        'field__2' => '1',
-        'field__3' => '3',
-        'field__4' => '1',
-        'inidvidual_field_1'=>'WIFI',
-        'inidvidual_field_2'=>'Cozinha Equipada',
-        'inidvidual_field_3'=>'Maquina Lavar',
-        'price'=>'100',
-        'deal'=>'Rent Home',
-        'images'=>['front/media/img/saved/img3.jpg', 'front/media/img/saved/img_0.png']
+        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+        culpa qui officia deserunt mollit anim id est laborum.',
+        'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
+            ],
+            [
+            'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+            'subhome'=>'CAMPANHÃ',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+            'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
 
+
+            ],
+            [
+            'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse',
+            'subhome'=>'CAMPANHÃ',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.',
+        'images'=>['front/media/img/saved/img_2.png', 'front/media/img/saved/img_0.png']
 
         ],
-        [
-        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse3333',
-        'subhome'=>'CAMPANHÃ',
-        'field__1'=>'17',
-        'field__2' => '1',
-        'field__3' => '3',
-        'field__4' => '1',
-        'inidvidual_field_1'=>'WIFI',
-        'inidvidual_field_2'=>'Cozinha Equipada',
-        'inidvidual_field_3'=>'Maquina Lavar',
-        'price'=>'100',
-        'deal'=>'Rent Home',
-        'images'=>['front/media/img/saved/img3.jpg', 'front/media/img/saved/img_0.png']
 
+        
 
-        ],
-        [
-        'home'=>'Porto Loft 2.3 - Gil Vicente Guesthouse44444',
-        'subhome'=>'CAMPANHÃ',
-        'field__1'=>'17',
-        'field__2' => '1',
-        'field__3' => '3',
-        'field__4' => '1',
-        'inidvidual_field_1'=>'WIFI',
-        'inidvidual_field_2'=>'Cozinha Equipada',
-        'inidvidual_field_3'=>'Maquina Lavar',
-        'price'=>'100',
-        'deal'=>'Rent Home',
-        'images'=>['front/media/img/saved/img3.jpg', 'front/media/img/saved/img_0.png']
-
-
-]
 ]]];
 
 @endphp
+@include('front.pages.home.partials.home-cards',['data'=>$result],['data_invest'=>$result_invest])
 
-
-
-
-    @include('front.pages.home.partials.home-cards', ['data'=>$result])
-
-    @php
+@php
 
 $result = ['0'=>
     [

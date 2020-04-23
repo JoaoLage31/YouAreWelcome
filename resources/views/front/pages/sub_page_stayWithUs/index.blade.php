@@ -855,7 +855,10 @@
     ]]];
 
 @endphp
+
 @include('front.pages.sub_page_stayWithUs.partials.homes_list', ['data'=>$result])
+
+@include('front.pages.sub_page_stayWithUs.partials.go-next')
 
 @include('front.pages.home.partials.section-3',[
     'title_section'=>'You Are Welcome!',

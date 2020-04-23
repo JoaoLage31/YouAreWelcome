@@ -84,6 +84,7 @@
     font-size: 1.5rem;
     font-weight: 300;
     color: white;
+    text-transform: uppercase;
     @include limite-text-small(2rem, 2);
 }
 .small-title-3 {
@@ -93,6 +94,7 @@
     color: white;
     margin-bottom: 30px;
     @include limite-text-small(1.25rem, 1);
+    @include letter-spacing(100, 1.125);
 }
 .small-title2 {
     font-family: $font-Source;
@@ -185,6 +187,7 @@
         font-size: 19.2px;
         font-size: 1.2rem;
         color:$azul_cards;
+        text-transform: uppercase;
         @include limite-text(2rem, 1);
     }
     &__variant-3{
@@ -656,3 +659,10 @@
     }
 }
 
+.description-place{
+    font-family: $font-Source;
+    font-size: 1rem;
+    color: $azul_cards;
+    @include limite-text(1.5rem, 4);
+    @include letter-spacing(20, 1);
+}

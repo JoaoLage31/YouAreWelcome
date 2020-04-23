@@ -5,6 +5,10 @@
 
 a{
 text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 body{
@@ -38,8 +42,13 @@ overflow-x: hidden;
 max-width: 1366px;
 margin: auto;
 width: 100%;
+position: relative;
 }
 
 html{
   margin: auto;
+}
+
+button:focus{
+  outline: none;
 }

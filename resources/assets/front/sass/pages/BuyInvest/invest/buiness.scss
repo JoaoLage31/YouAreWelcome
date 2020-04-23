@@ -1,0 +1,98 @@
+.buisness-invest{
+    background-color:#EAEBF4;
+    margin: auto;
+    padding-top: 5.68rem;
+
+    .section2{
+        position: unset;
+        margin: auto;
+        padding: 0;
+        margin-top: unset;
+        margin-bottom: 3rem;
+
+        .title{
+            color: $azul_cards;
+            text-align: center;
+        }
+
+        h2{
+            color: $azul_cards;
+            min-height: unset;
+        }
+    }
+}
+
+.buisness_qualities{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 9.625rem;
+
+    &__individual{
+        padding-left: 30px;
+        padding-right: 30px;
+
+        &__number{
+            margin-bottom: 2rem;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            p{
+                font-family: $font-Gelasio;
+                font-size: 4rem;
+                color: $azul_cards;
+                font-style: italic;
+                margin-bottom: 0;
+            }
+
+            &__line{
+                width: 70%;
+                height: 2px;
+                background-color: $beje;
+            }
+        }
+
+        &__title{
+            margin-bottom: 4rem;
+
+            p{
+                font-family: $font-Gelasio;
+                font-size: 1.5rem;
+                color: $beje;
+                font-weight: 600;
+                @include text-no-min(2rem, 3);
+                @include letter-spacing(20, 1.5);
+            }
+        }
+
+        &__qualities{
+            padding: 0;
+
+            &__ind{
+                display: flex;
+                margin-bottom: 2rem;
+                p{
+                    margin-left: 1rem;
+                    color: $azul_cards;
+                    font-size: 1rem;
+                    font-family: $font-Source;
+                    margin-bottom: 0;
+                    @include limite-text(1.5rem, 2);
+                    @include letter-spacing(20, 1.5);
+                }
+            }
+        }
+    }
+}
+
+.topic{
+    margin-left: 1rem;
+    color: $azul_cards;
+    font-size: 1rem;
+    font-family: $font-Source;
+    margin-bottom: 0;
+    @include text-no-min(1.5rem, 1);
+    @include letter-spacing(20, 1.5);
+}

@@ -1,14 +1,6 @@
-@foreach($data as $key=>$collection)
-    @foreach($collection['items'] as $item)
-        @include('front.components.home.form',[
-            'title'=>$item['title'],
-        ])
-    @endforeach
-@endforeach
 
 
 
-<form class="col-10 home_form" action="">
     <div class="home_form__container">
         <span class="home_form__icon"><img  src="{{URL::asset('front/media/icons/home/form/Edit.svg')}}" alt="" alt=""></span>
           <input type="text" class="home_form__input" placeholder="Your Name">
@@ -46,4 +38,3 @@
             </a></p>
     </div>
     <input class="home_form__submit" type="submit">
-</form>

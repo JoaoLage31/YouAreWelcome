@@ -2,8 +2,11 @@
 
 @section('content')
 
-@include('front.pages.sub_page_Home.partials.slider', ['data'=>$result])
+@include('front.pages.sub_home_types.sub_page_home-invest.partials.slider', ['data'=>$result])
 
+@include('front.pages.sub_home_types.sub_page_home-invest.partials.description')
+
+@include('front.pages.sub_home_types.sub_page_home-invest.partials.download')
 @php
 $form_title = ['0'=>
     [
@@ -13,7 +16,7 @@ $form_title = ['0'=>
     ]]];
 @endphp
 
-@include('front.pages.sub_page_Home.partials.form', ['data'=>$form_title])
+@include('front.pages.sub_home_types.sub_page_home-buy.partials.form', ['data'=>$form_title])
 
 
 @include('front.pages.home.partials.section-3',[
