@@ -70,13 +70,13 @@
                                 <a class="menu-open" href="invest_us">Invest with us</a>
                             </div>
                             <div class="hover2 d-flex">
-                                <a class="menu-open" href="#">About Us</a>
+                                <a class="menu-open" href="ourteam">About Us</a>
                             </div>
                             <div class="hover2 d-flex">
                                 <a class="menu-open" href="whatweoffer">What We Offer</a>
                             </div>
                             <div class="hover2 d-flex">
-                                <a class="menu-open" href="#">Help?</a>
+                                <a class="menu-open" href="help">Help?</a>
                             </div>
                             <div class="hover2 d-flex">
                                 <a class="menu-open" href="#">Contact us</a>

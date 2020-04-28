@@ -6,36 +6,35 @@
 $result = ['0'=>
     [
     'items'=>[[
-        'title'=>'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'subtitle'=>'About us',
-        'images'=>['front/media/img/saved/O6ZG0D0.jpg'],
+        'title'=>'How Hold & Flip Works . Lorem ipsum dolor sit amet, consectetur adipiscing.',
+        'description'=>'Finding a new home is a pain, moving is expensive, and making new friends as 
+        an adult is hard. We give people a better way to live, and a better community to 
+        live with.',
+        'subtitle'=>'What we offer',
+        'images'=>['front/media/img/saved/O5MCDL0.png'],
     ]  
 ]]];
 @endphp
 
-@include('front.pages.sub_page_whatweoffer.partials.intro_offer', ['data'=>$result])
+@include('front.pages.sub_page_ourteam.partials.intro_offer', ['data'=>$result])
 
 
 @php
     $button =['0'=>[
         'items'=>[[
-            'button'=>'who we are',
+            'button'=>'For Sellers',
             'link'=>'weare'
         ]]
     ],
     '1'=>[
         'items'=>[[
-            'button'=>'why us',
+            'button'=>'for buyers',
             'link'=>'whyus'
         ]]
     ],
     '2'=>[
         'items'=>[[
-            'button'=>'our team',
+            'button'=>'For rents',
             'link'=>'ourteam'
         ]]
     ],
@@ -45,83 +44,46 @@ $result = ['0'=>
 @include('front.pages.sub_page_invest.partials.sub_menu',['button'=>$button])
 
 @php
-    $text_area = ['0'=>
-    [
-    'subtitle' => 'Who we are',
-    'title' => 'Lorem ipsum dolor sit amet, consectetur.',
-    'image' =>'front/media/img/saved/offer.jpg',
-    'items'=>[
-        [
-        'title'=>'Who we are',
-        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare1',
-        'key_k'=>1,
-        ],
-           [
-        'title'=>'Our Mission',
-        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare2',
-        'key_k'=>2,
-        ],
-        [
-        'title'=>'Our History',
-        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare3',
-        'key_k'=>3,
-        ],
-    ]]];
-@endphp
-
-@include('front.pages.sub_page_whatweoffer.partials.who_are_we',['text_area'=>$text_area])
-
-@php
-    $title = ['0'=>
-    [
-    'items'=>[[
-        'title'=>'Maximize revenue. Minimize headaches.',
-        'subtitle'=>'Why us?',
-    ]  
-    ]]];
     
-    $cards = ['0'=>
+$result = ['0'=>
     [
+    'title'=> 'For Sellers',
+    'description'=> 'Um dos grandes objetivos da Housefy é acabar com a necessidade de pagar elevados custos de 
+                    comissão às tradicionais agências imobiliárias. O nosso modelo oferece uma equipa de 
+                    profissionais especializados que trabalham através de ferramentas digitais para facilitar o processo 
+                    de venda diretamente entre o proprietário e o comprador. É assim que vamos vender o seu imóvel:',
     'items'=>[[
-        'title'=>'Report',
-        'subtitle'=>'Review property details and learn more about the value of your portfolio with customized report.',
-        'images'=>['front/media/icons/invest/house.svg'],
-    ],
-    [
-        'title'=>'Report',
-        'subtitle'=>'We collect documents such as inspection reports and lease information in order to attract qualified investors.',
-        'images'=>['front/media/icons/invest/house-5.svg'],
-    ],
-    [
-        'title'=>'Report',
-        'subtitle'=>'Create an account with usand Enter your property’s information and our team start working on it immediately.',
-        'images'=>['front/media/icons/invest/house-3.svg'],
-    ]
-    ]]];
-@endphp
-
-@include('front.pages.sub_page_whatweoffer.partials.cards',['data'=>$cards],['title'=>$title])
-
-@php
-    $team = ['0'=>
-    [
-    'items'=>[
+        'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
         [
-        'subtitle' => 'Our team',
-        'title' => 'Lorem ipsum dolor sit amet, consectetur.',
-        'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'topic'=>['Verificação e gestão do processo judicial','Verificação e gestão do processo judicial','Verificação e gestão do processo judicial','Verificação e gestão do processo judicial','Verificação e gestão do processo judicial'],
-        'image' =>'front/media/img/saved/offer_2.jpg',
-        ]
-    ]]];
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+            'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/laptop.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+]]];
+    
 @endphp
 
-@include('front.pages.sub_page_whatweoffer.partials.team',['team'=>$team])
-
-
+@include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
+@include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
+@include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
 
 @include('front.pages.home.partials.section-3',[
     'title_section'=>'You Are Welcome!',

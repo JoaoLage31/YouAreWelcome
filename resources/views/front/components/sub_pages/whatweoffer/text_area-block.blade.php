@@ -1,4 +1,4 @@
-<div class="card-header" id="headingOne">
+<div class="card-header" id="">
     <h5 class="">
       <button class="btn btn-link" data-toggle="collapse" data-target="#{{$collapse}}" aria-expanded="true" aria-controls="{{$collapse}}">
         @if (!empty($title))

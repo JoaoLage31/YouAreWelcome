@@ -18,5 +18,14 @@
     <div class="cards_invest">
         @include('front.components.home.invest.cards') 
     </div>
+
 </div>
 @include('front.components.button') 
+
+@push('scripts')
+<script>
+
+
+
+</script>
+@endpush

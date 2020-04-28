@@ -39861,7 +39861,12 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+$(document).ready(function () {
+  AOS.init({
+    once: true,
+    duration: 1200
+  });
+});
 
 /***/ }),
 

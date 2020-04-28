@@ -14944,9 +14944,16 @@ footer {
 
 .whatweoffer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin: auto;
   margin-top: 7.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .whatweoffer {
+    margin-top: 4rem;
+  }
 }
 
 .whatweoffer__title {
@@ -15022,5 +15029,58 @@ footer {
 .topic_container {
   display: flex;
   margin-bottom: 1.875rem;
+}
+
+.ourteam {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 15rem;
+  margin-top: 7.5rem;
+}
+
+.ourteam__container .whatweoffer__title {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .ourteam__none {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .buisness_img {
+    width: 100%;
+  }
+}
+
+.offer_icon {
+  display: flex;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.slider-c:nth-child(2) {
+  background-color: red;
+}
+
+.slide-offer {
+  margin: auto;
+  margin-top: 7.5rem;
+}
+
+.slide-offer__title {
+  font-family: "Gelasio", serif;
+  color: #2E3E91;
+  font-size: 2.375rem;
+  margin-bottom: 3.75rem;
+}
+
+.slide-offer__description {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2E3E91;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 

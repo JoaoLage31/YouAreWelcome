@@ -1,5 +1,12 @@
 
     <div class="content ">
+
+        @if(!empty($incon_svg))
+        <div class="offer_icon">
+            <img src="{{$incon_svg}}" alt="">
+        </div>
+        @endif
+
         @if(!empty($number))
         <p class="variant-1">
             {{$number}}

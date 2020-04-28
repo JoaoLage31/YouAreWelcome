@@ -1,5 +1,5 @@
 <div id="accordion" class="whatweoffer">
-    <div class="col-xl-4">
+    <div class="col-12 col-xl-4">
         @foreach($text_area as $key => $collection)
         <h2 class="whatweoffer__title__sub"> {{$collection['subtitle']}}</h2>
         <h2 class="whatweoffer__title"> {{$collection['title']}}</h2>
@@ -15,15 +15,11 @@
             @endforeach
         @endforeach
     </div>
-    <div class="col-xl-1"></div>
-    <div class="col-xl-6">
+    <div class="ourteam__none col-xl-1"></div>
+    <div class=" col-12 col-xl-6">
         @foreach($text_area as $key => $collection)
-            <img src=" {{$collection['image']}}" alt="">
+            <img class="buisness_img" src=" {{$collection['image']}}" alt="">
         @endforeach
     </div>
 </div>
-@push('scripts')
-<script>
 
-</script>
-@endpush

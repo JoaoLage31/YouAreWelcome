@@ -200,17 +200,19 @@ Route::get('invest_us', function()
 });
 
 
-Route::get('whatweoffer', function()
+Route::get('ourteam', function()
     {
 
-    $result = ['0'=>
-        [
-        'items'=>[[
-            'title'=>'Love where you live, and who you live with',
-            'description'=>'Move-in ready homes and a built-in community so you can feel at home, together—wherever you are.',
-        ]
-        ]]];
-
-
-        return view('front.pages.sub_page_whatweoffer.index', compact('result'));
+        return view('front.pages.sub_page_ourteam.index');
 });
+
+Route::get('whatweoffer', function()
+    {
+        return view('front.pages.sub_page_whatweoffer.index');
+});
+
+Route::get('help', function()
+    {
+        return view('front.pages.sub_page_help.index');
+});
+
