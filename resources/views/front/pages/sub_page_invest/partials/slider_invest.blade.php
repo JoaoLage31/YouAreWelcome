@@ -1,4 +1,4 @@
-<div id="toinvest" class="desktop">
+<div id="link2" class="desktop">
   <div id="here">
     @foreach($data_invest as $key=>$collection)
       <div class="slide_section2  homes_for_rent">

@@ -1,36 +1,13 @@
-<nav class="nav ">
-    <section class="nav__menu ">
+<nav class="nav">
+    <section class="nav__menu">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">
             <img src="{{URL::asset('front/media/img/logo/MenuHamburguerV2.svg')}}" alt="">
         </span>
         <div class="nav__menu__img">
-            <img class="nav__img" src="{{URL::asset('front/media/img/logo/logo_V2.svg')}}">
+            <a href="/"> <img class="nav__img" src="{{URL::asset('front/media/img/logo/logo_V2.svg')}}"></a>
         </div>
-        <ul class="nav__buttons ">
-            <li>
-            <a class="hover" href="StayWithUs">
-                <div class="menu-hover-img">
-                    <img src="{{('front/media/icons/other_arrows/Caminho 6.svg')}}" alt="">
-                </div>
-                <p class="small-title__variant menu__buttonV2">stay with us</p>
-            </a>
-            </li>
-            <li>
-                <a class="hover" href="#">
-                    <div class="menu-hover-img">
-                        <img src="{{('front/media/icons/other_arrows/Caminho 6.svg')}}" alt="">
-                    </div>
-                    <p class="small-title__variant menu__buttonV2">buy with us</p>
-                </a>
-            </li>
-            <li>
-                <a class="hover" href="invest_us">
-                    <div class="menu-hover-img">
-                        <img src="{{('front/media/icons/other_arrows/Caminho 6.svg')}}" alt="">
-                    </div>
-                    <p class="small-title__variant menu__buttonV2">invest with us</p>
-                </a>
-            </li>
+        <ul class="nav__buttons menu__buttonV2">
+            @include('front.components.navbar-buttons')
         </ul>
     </section>
 
@@ -54,33 +31,7 @@
                         </div>
                         
                         <div class="overlay-content ">
-
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="#">Stay with us</a>
-                                
-                            </div>
-
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="#">Buy with us</a>
-                               <!-- <div class="menu-hover-img-2">
-                                    <img src="{{('front/media/icons/other_arrows/Caminho 6.svg')}}" alt="">
-                                </div> -->
-                            </div>
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="invest_us">Invest with us</a>
-                            </div>
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="ourteam">About Us</a>
-                            </div>
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="whatweoffer">What We Offer</a>
-                            </div>
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="help">Help?</a>
-                            </div>
-                            <div class="hover2 d-flex">
-                                <a class="menu-open" href="#">Contact us</a>
-                            </div>
+                            @include('front.components.navbar-comp')
                         </div>
                     </div>
                     <div  class="nav__right_side__menu__log-in">  

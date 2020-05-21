@@ -23,19 +23,16 @@ $result = ['0'=>
     $button =['0'=>[
         'items'=>[[
             'button'=>'For Sellers',
-            'link'=>'weare'
         ]]
     ],
     '1'=>[
         'items'=>[[
             'button'=>'for buyers',
-            'link'=>'whyus'
         ]]
     ],
     '2'=>[
         'items'=>[[
             'button'=>'For rents',
-            'link'=>'ourteam'
         ]]
     ],
 ];
@@ -45,7 +42,8 @@ $result = ['0'=>
 
 @php
     
-$result = ['0'=>
+$result = [
+    '0'=>
     [
     'title'=> 'For Sellers',
     'description'=> 'Um dos grandes objetivos da Housefy é acabar com a necessidade de pagar elevados custos de 
@@ -77,12 +75,78 @@ $result = ['0'=>
         'title'=>'Property Advertisement',
         'description'=>'Professional photo session and social media communication.',
         ],
-]]];
+]],
+'1'=>
+    [
+    'title'=> 'For Buyers',
+    'description'=> 'Um dos grandes objetivos da Housefy é acabar com a necessidade de pagar elevados custos de 
+                    comissão às tradicionais agências imobiliárias. O nosso modelo oferece uma equipa de 
+                    profissionais especializados que trabalham através de ferramentas digitais para facilitar o processo 
+                    de venda diretamente entre o proprietário e o comprador. É assim que vamos vender o seu imóvel:',
+    'items'=>[[
+        'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+            'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/laptop.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+]],
+
+'2'=>
+    [
+    'title'=> 'For Rents',
+    'description'=> 'Um dos grandes objetivos da Housefy é acabar com a necessidade de pagar elevados custos de 
+                    comissão às tradicionais agências imobiliárias. O nosso modelo oferece uma equipa de 
+                    profissionais especializados que trabalham através de ferramentas digitais para facilitar o processo 
+                    de venda diretamente entre o proprietário e o comprador. É assim que vamos vender o seu imóvel:',
+    'items'=>[[
+        'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+            'incon_svg'=>'front/media/icons/offer/information.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/laptop.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+        [
+        'incon_svg'=>'front/media/icons/offer/mortgage-4.svg',
+        'title'=>'Property Advertisement',
+        'description'=>'Professional photo session and social media communication.',
+        ],
+]]
+];
     
 @endphp
 
-@include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
-@include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
 @include('front.pages.sub_page_whatweoffer.partials.slider-section',['data'=>$result,])
 
 @include('front.pages.home.partials.section-3',[

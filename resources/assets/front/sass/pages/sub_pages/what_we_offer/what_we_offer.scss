@@ -11,6 +11,19 @@
 }
 .slide{
 
+    &_section{
+        margin-bottom: 0;
+    }
+
+    &_paddings{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &_background{
+        background-color:#EAEBF4;
+    }
+
     &-offer{
     margin: auto;
     margin-top: 7.5rem;

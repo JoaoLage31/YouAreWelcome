@@ -1,4 +1,4 @@
-<div id="accordion" class="whatweoffer">
+<div id="link0" class="whatweoffer">
     <div class="col-12 col-xl-4">
         @foreach($text_area as $key => $collection)
         <h2 class="whatweoffer__title__sub"> {{$collection['subtitle']}}</h2>
@@ -8,7 +8,6 @@
                 @include('front.components.sub_pages.whatweoffer.text_area-block',[
                     'title'=>$item['title'],
                     'description'=>$item['description'],
-                    'collapse'=>$item['collapse'],
                     'key_k'=>$item['key_k'],
                 ])
             </div>

@@ -1,5 +1,5 @@
 
-<div class="cards_offer col-xl-11">
+<div id="link1" class="cards_offer col-xl-11">
     <div id="work" class="cards_invest_title">
         <div  class="section2 row col-md-8 justify-content-center">
             <div class="">
@@ -14,7 +14,6 @@
             </div>
         </div>
     </div>
-    
     <div class="cards_invest">
         @include('front.components.home.invest.cards') 
     </div>

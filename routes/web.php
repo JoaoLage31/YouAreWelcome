@@ -186,7 +186,6 @@ Route::get('a_home2', function()
 
 Route::get('invest_us', function()
     {
-
     $result = ['0'=>
         [
         'items'=>[[
@@ -195,14 +194,12 @@ Route::get('invest_us', function()
         ]
         ]]];
 
-
         return view('front.pages.sub_page_invest.index', compact('result'));
 });
 
 
 Route::get('ourteam', function()
     {
-
         return view('front.pages.sub_page_ourteam.index');
 });
 
@@ -211,8 +208,18 @@ Route::get('whatweoffer', function()
         return view('front.pages.sub_page_whatweoffer.index');
 });
 
+Route::get('buywithus', function()
+    {
+        return view('front.pages.sub_page_buyWithUs.index');
+});
+
+
 Route::get('help', function()
     {
         return view('front.pages.sub_page_help.index');
 });
 
+Route::get('contacts', function()
+    {
+        return view('front.pages.sub_page_contacts.index');
+});

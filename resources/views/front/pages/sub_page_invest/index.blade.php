@@ -10,7 +10,7 @@ $result = ['0'=>
         consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut.',
         'images'=>['front/media/img/saved/O6ZG0D0.jpg'],
-        'subtitle'=>'Invest with Us',
+        'subtitle'=>'',
     ]  
 ]]];
 @endphp
@@ -21,19 +21,16 @@ $result = ['0'=>
     $button =['0'=>[
         'items'=>[[
             'button'=>'what we offer',
-            'link'=>'work'
         ]]
     ],
         '1'=>[
             'items'=>[[
-                'button'=>'what we offer',
-                'link'=>'buisness'
+                'button'=>'BUSINESS MODEL',
             ]]
         ], 
         '2'=>[
             'items'=>[[
                 'button'=>'To Invest',
-                'link'=>'toinvest'
             ]]
         ],
 ];
@@ -57,17 +54,17 @@ $result = ['0'=>
         'images'=>['front/media/icons/invest/house.svg'],
     ],
     [
-        'title'=>'Report',
+        'title'=>'Seller & Buyer',
         'subtitle'=>'We collect documents such as inspection reports and lease information in order to attract qualified investors.',
         'images'=>['front/media/icons/invest/house-5.svg'],
     ],
     [
-        'title'=>'Report',
+        'title'=>'Listing',
         'subtitle'=>'Create an account with usand Enter your property’s information and our team start working on it immediately.',
         'images'=>['front/media/icons/invest/house-3.svg'],
     ],
     [
-        'title'=>'Report',
+        'title'=>'Our price',
         'subtitle'=>'Once you’ve accepted an offer, we’ll oversee the entire closing process and complete the transaction generally within 30 days.',
         'images'=>['front/media/icons/invest/mortgage-4.svg'],
     ]  

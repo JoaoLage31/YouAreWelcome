@@ -1,0 +1,85 @@
+.help{
+    display: flex;
+    margin: auto;
+    z-index: 1;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+
+    h2{
+        font-family: $font-Gelasio;
+        color: $azul_cards;
+        font-size: 1.5rem;
+        border-bottom: 1px solid $beje;
+        margin-bottom: 3.25rem;
+        padding-bottom: 1.85rem;
+
+        &:nth-of-type(2){
+            margin-top: 4rem;
+        }
+    }
+
+    .card-header{
+        background-color: transparent;
+        border-bottom: none;
+        padding: 0;
+
+        h5{
+            .btn{
+                padding: 0;
+                color: $azul_cards;
+                font-size: 1.5rem;
+                margin-bottom: 1.35rem;
+                outline: none;
+
+                &:focus{
+                    text-decoration: none;
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .card-body_p{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.accordion_none{
+    min-width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.button_help{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: $font-Source;
+    font-size: 1.25rem;
+    color: $azul_cards;
+    margin-bottom: 1.25rem;
+
+    &_active{
+        font-weight: 600;
+    }
+}
+
+
+.help_intro{
+    padding-left: 0;
+
+    .title{
+        color: $beje;
+        font-style: 2.375rem;
+    }
+
+
+    .small-title{
+        color:$beje;
+        min-height: unset;
+    }
+}

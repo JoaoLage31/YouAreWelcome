@@ -225,7 +225,7 @@
     font-size: 19.2px;
     font-size: 1.2rem;
     color:$beje;
-    @include limite-text(1rem, 1);
+    @include limite-text(1rem, 1.2);
 }
 
 .home-descritpion-buy{
@@ -554,8 +554,8 @@
         margin-bottom: 1rem;
     }
     .small-title2 {
-        font-size: 1.1rem;
-        @include limite-text-small(1.6rem, 15);
+        font-size: 1rem;
+        @include limite-text-small(1.3rem, 15);
     }
     .bottom-text{
         @include limite-text(3rem, 2);
@@ -592,8 +592,10 @@
 @include media-breakpoint-down(xs) {
 
     .title-2{
-        font-size: 1.4rem;
-        @include limite-text(1.6rem, 5);
+        font-size: 1.2rem;
+        @include text-no-min(2rem, 3);
+        min-height: unset;
+        margin-bottom: 1rem;
     }
 
     .bottom-text{
@@ -649,6 +651,11 @@
     .footer-subtitle{
         font-size: 1rem;
         @include limite-text-small(1rem, 1);
+    }
+
+    .small-title-3{
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
     }
 
     .inputt input[type="text"]{

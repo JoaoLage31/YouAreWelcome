@@ -1,5 +1,5 @@
 
-<div id="work" class="cards_invest_title">
+<div id="link0" class="cards_invest_title">
     <div  class="section2 row col-md-8 justify-content-center">
         <div class="col-11 col-md-8">
             @foreach($title as $key => $collection)

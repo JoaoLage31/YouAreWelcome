@@ -15,7 +15,6 @@ $form_title = ['0'=>
 
 @include('front.pages.sub_home_types.sub_page_home-buy.partials.form', ['data'=>$form_title])
 
-
 @include('front.pages.home.partials.section-3',[
     'title_section'=>'You Are Welcome!',
     'sub_title_section'=>'Creating strong partnerships.',

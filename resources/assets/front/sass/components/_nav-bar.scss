@@ -1,7 +1,6 @@
 .nav{
     position: absolute;
     z-index: 2;
-    padding: 16px;
     padding: 1rem;
     width: 100%;
     max-width: 1366px;
@@ -12,10 +11,8 @@
     -ms-flex-align: center;
     -ms-grid-row-align: center;
     align-items: center;
-    padding-left: 48px;
-    padding-left: 3rem;
-    padding-right: 48px;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     &__img{
         margin-left: 3rem;
@@ -60,14 +57,15 @@
 
     &__right_side__button{
         background-color:$beje;
-        padding: 16px;
         padding: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         border-radius: 0.2rem;
-        margin-right: 32px;
-        margin-right: 2rem;
         position: relative;
         -webkit-transition: 0.4s;
         transition: 0.4s;
+        display: flex;
+        align-items: center;
     }
 
     &__right_side__button:after{
@@ -262,15 +260,6 @@
             padding-top: 32px;
             padding-top: 2rem;
         }
-
-    
-    
-        &__right_side__button{
-            padding: 8px;
-            padding: 0.5rem;
-            margin-right: 16px;
-            margin-right: 1rem;
-        }
     }
     .menu-open{
         margin: auto;
@@ -330,13 +319,6 @@
             margin-top: 24px;
             margin-top: 1.5rem;
         }
-    
-        &__right_side__button{
-            padding: 8px;
-            padding: 0.5rem;
-            margin-right: 16px;
-            margin-right: 1rem;
-        }
     }
     .menu-open{
         margin: auto;
@@ -351,5 +333,14 @@
     }
 }
 
+.menu__buttonV2{
+    li{
+        a{
+            p{
+                color: $azul_cards;
+            }
+        }
+    }
+}
 
 

@@ -1,0 +1,62 @@
+.contacts_form{
+    @extend .help;
+    margin-top: -20rem;
+
+    h2{
+        margin-bottom: 1.85rem;
+    }
+
+    &_left{
+
+        &__container{
+            margin-top: 2rem;
+            h5{
+                font-family: $font-Source;
+                color: $beje;
+                font-size: 0.75rem;
+            }
+
+            p{
+                font-size: 1.125rem;
+                font-family: $font-Source;
+                color: $azul_cards;
+            }
+
+            a{
+                color: $beje;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_right{
+
+        .home_form{
+            &__container{
+                width: 100%;
+                margin: 0;
+
+                &__last{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+            &__policy{
+                width: 100%;
+                margin: 0;
+
+                p{
+                    font-size: 0.875rem;
+                }
+            }
+            
+            &__submit{
+                position: absolute;
+                right: 0;
+            }
+        }
+
+    }
+}

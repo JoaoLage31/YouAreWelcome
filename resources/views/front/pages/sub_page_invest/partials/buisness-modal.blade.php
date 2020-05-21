@@ -1,4 +1,4 @@
-<div id="buisness" class="buisness-invest col-xl-11">
+<div id="link1" class="buisness-invest col-xl-11">
     <div  class="section2 row col-10 col-md-10 col-lg-10 justify-content-center">
             @foreach($data as $key => $collection)
                 @foreach($collection['items'] as $item)

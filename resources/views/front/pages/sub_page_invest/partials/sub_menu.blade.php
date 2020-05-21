@@ -4,7 +4,6 @@
             @foreach($collection['items'] as $item)
             @include('front.components.home.invest.button_invest',[
                 'button'=>$item['button'],
-                'link'=>$item['link'],
             ])
             @endforeach
         @endforeach

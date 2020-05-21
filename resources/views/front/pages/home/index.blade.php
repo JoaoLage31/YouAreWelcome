@@ -1,5 +1,3 @@
-
-
 @extends('front.layout.app')
 
 @section('content')
@@ -8,7 +6,7 @@ $result = ['0'=>
     [
     'items'=>[[
         'title'=>'Love where you live, and who you live with',
-        'description'=>'Move-in ready homes and a built-in community so you can feel at home, together—wherever you are.',
+        'description'=>'',
     ]
 ]]];
 @endphp
@@ -19,16 +17,16 @@ $result = ['0'=>
 $result = ['0'=>
         [
         'items'=>[[
-            'title'=>'Stay with us',
+            'title'=>'STAY WITH US',
             'subtitle'=>'Sed ut perspiciatis unde omnisiste natus error sit voluptatem  accusantium doloremque.',
             'images'=>['front/media/icons/house.svg']
     ],[
-            'title'=>'Stay with us',
+            'title'=>'BUY WITH US',
             'subtitle'=>'Sed ut perspiciatis unde omnisiste natus error sit voluptatem  accusantium doloremque.',
             'images'=>['front/media/icons/house-key-2.svg']
     ],
     [
-            'title'=>'Stay with us',
+            'title'=>'INVEST WITH US',
             'subtitle'=>'Sed ut perspiciatis unde omnisiste natus error sit voluptatem  accusantium doloremque.',
             'images'=>['front/media/icons/house-4.svg']
     ],
@@ -412,9 +410,8 @@ $result = ['0'=>
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        'subtitle'=>'ABOUT US',
+            dolore eu fugiat nulla pariatur. ',
+            'subtitle'=>'ABOUT US',
     ]  
     ]]];
 

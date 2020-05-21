@@ -21,22 +21,20 @@ $result = ['0'=>
 
 
 @php
-    $button =['0'=>[
+    $button =[
+        '0'=>[
         'items'=>[[
             'button'=>'who we are',
-            'link'=>'weare'
         ]]
     ],
     '1'=>[
         'items'=>[[
             'button'=>'why us',
-            'link'=>'whyus'
         ]]
     ],
     '2'=>[
         'items'=>[[
             'button'=>'our team',
-            'link'=>'ourteam'
         ]]
     ],
 ];
@@ -54,19 +52,16 @@ $result = ['0'=>
         [
         'title'=>'Who we are',
         'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare1',
         'key_k'=>1,
         ],
            [
         'title'=>'Our Mission',
         'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare2',
         'key_k'=>2,
         ],
         [
         'title'=>'Our History',
         'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.',
-        'collapse'=>'whoweare3',
         'key_k'=>3,
         ],
     ]]];
@@ -86,19 +81,19 @@ $result = ['0'=>
     $cards = ['0'=>
     [
     'items'=>[[
-        'title'=>'Report',
+        'title'=>'Sell Faster',
         'subtitle'=>'Review property details and learn more about the value of your portfolio with customized report.',
-        'images'=>['front/media/icons/invest/house.svg'],
+        'images'=>['front/media/img/ourteam/house-key.png'],
     ],
     [
-        'title'=>'Report',
+        'title'=>'Earn Commision',
         'subtitle'=>'We collect documents such as inspection reports and lease information in order to attract qualified investors.',
-        'images'=>['front/media/icons/invest/house-5.svg'],
+        'images'=>['front/media/img/ourteam/chat-2.png'],
     ],
     [
-        'title'=>'Report',
+        'title'=>'Grow Your Business',
         'subtitle'=>'Create an account with usand Enter your property’s information and our team start working on it immediately.',
-        'images'=>['front/media/icons/invest/house-3.svg'],
+        'images'=>['front/media/img/ourteam/command.png'],
     ]
     ]]];
 @endphp

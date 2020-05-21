@@ -1,6 +1,6 @@
 
 @foreach($data as $key=>$collection)
-<div class="slide">
+<div id="link{{$key}}" class="slide slide_paddings {{$key == 1 ? 'slide_background' : ''}}">
   <div class="slide-offer col-xl-10">
       <h2 class="slide-offer__title">{{$collection['title']}}</h2>
       <p class="slide-offer__description">{{$collection['description']}}</p>
